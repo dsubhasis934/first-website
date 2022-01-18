@@ -1,0 +1,98 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Raleway', sans-serif;
+}
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url(../redfort.jpg);
+	background-position:center;
+	background-size:cover;
+	height:100vh;
+	width:100vh;
+}
+nav{
+	background:rgba(0,0,0,0.3);
+	width:205%;
+	height:15vh;
+	color:white;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	text-transform:uppercase;
+}
+nav .logo{
+	width:25%;
+	text-align:center;
+}
+nav .menu{
+	width:40%;
+	display:flex;
+	justify-content:space-around;
+	list-style-type:none;
+}
+nav .menu a {
+	width:25%;
+	text-decoration:none;
+	color:white;
+	font-weight:bold;
+}
+.menu a:first-child {
+	color:#00b894;
+}
+main{
+	width:200%;
+	height:85vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	color:white;
+}
+section h2{
+	font-size:35px;
+	font-weight:200;
+	text-shadow:1px 1px 2px black;
+	letter-spacing:3px;
+}
+section h1{
+	font-size:55px;
+	font-weight:700;
+	text-shadow:1px 2px 5px black;
+	text-transform:uppercase;
+	margin:30px 0 20px 0;
+}
+section p{
+	font-size:25px;
+	word-spacing:2px;
+	margin-bottom:25px;
+	text-shadow:1px 1px 1px black;
+}
+section .btn1{
+	background:white;
+	color:black;
+	text-decoration:none;
+	font-size:25px;
+	padding:10px 30px;
+	border:1px solid black;
+}
+section .btn2{
+	background:#00b894;
+	color:black;
+	text-decoration:none;
+	font-size:25px;
+	padding:10px 30px;
+	border:1px solid black;
+}
+section .change_content:after{
+	content:'';
+	animation: changetext 10s infinite linear;
+	color:#00b894;
+}
+@keyframes changetext{
+	0%{content:"victoria";}
+	0%{content:"victoria";}
+	10%{content:"lake gardens";}
+	30%{content:"princep ghat";}
+	50%{content:"lalkella";}
+	100%{content:"Indian Museum";}
+}
